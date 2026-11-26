@@ -1,0 +1,199 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+  color: #334155;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #1e293b;
+}
+
+.fundo-escuro {
+  background-color: #051a3d;
+}
+
+.btn-primary {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}
+
+.btn-outline-primary {
+  color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.btn-outline-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #fff;
+}
+
+.topo-pagina {
+  background-color: #051a3d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topo-pagina .navbar-brand,
+.topo-pagina .nav-link {
+  color: #fff;
+}
+
+.topo-pagina .nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rodape-pagina {
+  background-color: #051a3d;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.painel-inicial {
+  padding: 3rem 0;
+  color: #fff;
+  text-align: center;
+  background-color: #051a3d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cartao-cidade {
+  height: 100%;
+  overflow: hidden;
+  border-color: #cbd5e1;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.cartao-cidade .card-img-top {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cartao-cidade:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.cartao-cidade .corpo-cartao {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.cabecalho-cartao {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bandeira-cidade {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #f8fafc;
+}
+
+.cartao-cidade .texto-cartao {
+  margin-bottom: 1.5rem;
+  color: #6c757d;
+}
+
+.secao-sobre {
+  background-color: #e8eff7;
+}
+
+.destaque-cidade {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 48vh;
+  padding: 3rem 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+}
+
+.destaque-cidade::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.62);
+  z-index: 1;
+}
+
+.destaque-cidade .container {
+  position: relative;
+  z-index: 2;
+}
+
+.destaque-texto {
+  max-width: 720px;
+}
+
+.cartao-detalhe {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.foto-cidade {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.fundo-santos {
+  background-image: url('imagens/SANpraia.jpg');
+}
+.fundo-sao-vicente {
+  background-image: url('imagens/svdia.jpg');
+}
+.fundo-cubatao {
+  background-image: url('imagens/PadreAnchieta.webp');
+}
+.fundo-guaruja {
+  background-image: url('imagens/Guaruja_aura3.webp');
+}
+.fundo-mongagua {
+  background-image: url('imagens/mpra.jpg');
+}
+.fundo-itanhaem {
+  background-image: url('imagens/itanhaem.jpg');
+}
+.fundo-praia-grande {
+  background-image: url('imagens/pg.jpg');
+}
+.fundo-bertioga {
+  background-image: url('imagens/bertioga.jpg');
+}
+.fundo-peruibe {
+  background-image: url('imagens/pci.webp');
+}
+@media (max-width: 768px) {
+  .destaque-cidade {
+    min-height: 38vh;
+    background-attachment: scroll;
+  }
+  .foto-cidade {
+    height: 240px;
+  }
+}
+@media (min-width: 768px) {
+  .cartao-detalhe {
+    padding: 3rem;
+  }
+}

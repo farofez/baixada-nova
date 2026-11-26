@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça as nove cidades da Baixada Santista, suas praias e histórias.">
+  <title>Baixada Santista</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style-baixada.css" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky-top fundo-escuro topo-pagina">
+    <div class="collapse fundo-escuro border-bottom border-secondary border-opacity-25" id="painel-informacoes">
+      <div class="container py-4">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <h5 class="text-white fw-semibold mb-2">Sobre este guia</h5>
+            <p class="text-light opacity-75 small mb-0" style="max-width: 62ch;">
+              A Baixada Santista é formada por nove cidades, cada uma com sua história, suas praias e seu jeito de viver. Aqui você encontra um pouco sobre a região.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h6 class="text-white fw-semibold mb-2">Seções do portal</h6>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-1">
+                <a class="text-light opacity-75 text-decoration-none" href="#secao-cidades">Municípios</a>
+              </li>
+              <li class="mb-1">
+                <a class="text-light opacity-75 text-decoration-none" href="#secao-sobre">História e geografia</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h6 class="text-white fw-semibold mb-2">Contato</h6>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-1">
+                <a class="text-light opacity-75 text-decoration-none">67@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Baixada Santista</a>
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#links-menu" aria-controls="links-menu" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <button class="btn btn-sm btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#painel-informacoes">
+            Sobre
+          </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="links-menu">
+          <ul class="navbar-nav align-items-lg-center gap-lg-1 my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#secao-cidades">Municípios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#secao-sobre">Sobre a região</a>
+            </li>
+            <li class="nav-item ms-lg-2 d-none d-lg-block">
+              <button class="btn btn-sm btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#painel-informacoes">
+                Informações
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="painel-inicial">
+      <div class="container py-4 py-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-xl-8">
+            <h1 class="display-4 fw-bold mb-3 text-white">Baixada Santista</h1>
+            <p class="lead text-light opacity-75 mb-4 mx-auto" style="max-width: 620px;">
+              Nove cidades, muitas histórias.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <a class="btn btn-light" href="#secao-cidades">Explorar municípios</a>
+              <a class="btn btn-outline-light" href="#secao-sobre">Conhecer a região</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white" id="secao-cidades">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold mb-2">Municípios da Baixada</h2>
+          <p class="text-secondary mx-auto" style="max-width: 600px;">
+            Um pouco sobre cada cidade, com lugares para conhecer e histórias que fazem parte da região.
+          </p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card cartao-cidade">
+              <img class="card-img-top" src="imagens/SANpraia.jpg">
+              <div class="card-body corpo-cartao">
+                <div class="cabecalho-cartao">
+                  <img class="bandeira-cidade" src="imagens/Bandeira_Santos.png">
+                  <div>
+                    <h3 class="h5 card-title mb-0">Santos</h3>
+                    <small class="text-secondary">Maior jardim de praia</small>
+                  </div>
+                </div>
+                <p class="card-text texto-cartao">
+                  Sacramentado pelo Livro dos Recordes, o maior jardim frontal de praia do mundo acompanha seis praias em sete quilômetros de extensão.
+                </p>
+                <a class="btn btn-primary botao-cartao" href="santos.html">Conhecer Santos</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card cartao-cidade">
+              <img class="card-img-top" src="imagens/svdia.jpg">
+              <div class="card-body corpo-cartao">
+                <div class="cabecalho-cartao">
+                  <img class="bandeira-cidade" src="imagens/Bandeira_São Vicente.png">
+                  <div>
+                    <h3 class="h5 card-title mb-0">São Vicente</h3>
+                    <small class="text-secondary">Primeira vila do Brasil</small>
+                  </div>
+                </div>
+                <p class="card-text texto-cartao">
+                  Fundada em 22 de janeiro de 1532 por Martim Afonso de Souza, marcou a chegada da colonização oficial portuguesa ao litoral brasileiro.
+                </p>
+                <a class="btn btn-primary botao-cartao" href="sv.html">Conhecer São Vicente</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card cartao-cidade">
+              <img class="card-img-top" src="imagens/cubatao.jpg">
+              <div class="card-body corpo-cartao">
+                <div class="cabecalho-cartao">
+                  <img class="bandeira-cidade" src="imagens/Bandeira_Cubatão.png">
+                  <div>
+                    <h3 class="h5 card-title mb-0">Cubatão</h3>
+                    <small class="text-secondary">Serra do Mar e trilhas</small>
+                  </div>
+                </div>
+                <p class="card-text texto-cartao">
+                  Cercada pelos contrafortes da Serra do Mar, guarda a Trilha de Padre Anchieta, cachoeiras e o Jardim Botânico em área de preservação.
+                </p>
+                <a class="btn btn-primary botao-cartao" href="cubatao.html">Conhecer Cubatão</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card cartao-cidade">
+              <img class="card-img-top" src="imagens/Guaruja_aura3.webp">
+              <div class="card-body corpo-cartao">
+                <div class="cabecalho-cartao">
+                  <img class="bandeira-cidade" src="imagens/Bandeira_guaruja.png">
+                  <div>
+                    <h3 class="h5 card-title mb-0">Guarujá</h3>
+                    <small class="text-secondary">Ilha de Santo Amaro</small>
+                  </div>
+                </div>
+                <p class="card-text texto-cartao">
+                  Origens ligadas a 1534 na antiga Ilha do Sol (Santo Amaro), destacando-se pelo papel estratégico de suas fortalezas e praias exuberantes.
+                </p>
+                <a class="btn btn-primary botao-cartao" href="guaruja.html">Conhecer Guarujá</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card cartao-cidade">
+              <img class="card-img-top" src="imagens/mpra.jpg">
+              <div class="card-body corpo-cartao">
+                <div class="cabecalho-cartao">
+                  <img class="bandeira-cidade" src="imagens/Bandeira_Mongagua.png">
+                  <div>
+                    <h3 class="h5 card-title mb-0">Mongaguá</h3>
+                    <small class="text-secondary">Águas e natureza</small>
+                  </div>
+                </div>
+                <p class="card-text texto-cartao">
+                  Área percorrida desde 1532 entre os rios Mongaguá e Aguapeú, antigo pouso de viajantes com rios, cachoeiras e praias agradáveis.
+                </p>
+                <a class="btn btn-primary botao-cartao" href="mongagua.html">Conhecer Mongaguá</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card cartao-cidade">
+              <img class="card-img-top" src="imagens/itanhaem.jpg">
+              <div class="card-body corpo-cartao">
+                <div class="cabecalho-cartao">
+                  <img class="bandeira-cidade" src="imagens/Bandeira_Itanhaem.png">
+                  <div>
+                    <h3 class="h5 card-title mb-0">Itanhaém</h3>
+                    <small class="text-secondary">Fundada em 1532</small>
+                  </div>
+                </div>
+                <p class="card-text texto-cartao">
+                  Com formação histórica ligada a Martim Afonso e aos jesuítas, tornou-se Cabeça de Capitania em 1624 com jurisdição de grande relevância.
+                </p>
+                <a class="btn btn-primary botao-cartao" href="itanhaem.html">Conhecer Itanhaém</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card cartao-cidade">
+              <img class="card-img-top" src="imagens/pg.jpg">
+              <div class="card-body corpo-cartao">
+                <div class="cabecalho-cartao">
+                  <img class="bandeira-cidade" src="imagens/Bandeira_PG.jpg">
+                  <div>
+                    <h3 class="h5 card-title mb-0">Praia Grande</h3>
+                    <small class="text-secondary">História e orla</small>
+                  </div>
+                </div>
+                <p class="card-text texto-cartao">
+                  Habitada por pescadores desde o século XIX, teve seu desenvolvimento impulsionado pelo Forte de Itaipu e pela histórica Ponte Pênsil.
+                </p>
+                <a class="btn btn-primary botao-cartao" href="pg.html">Conhecer Praia Grande</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card cartao-cidade">
+              <img class="card-img-top" src="imagens/bertioga.jpg">
+              <div class="card-body corpo-cartao">
+                <div class="cabecalho-cartao">
+                  <img class="bandeira-cidade" src="imagens/Bandeira_Bertioga.jpg">
+                  <div>
+                    <h3 class="h5 card-title mb-0">Bertioga</h3>
+                    <small class="text-secondary">Forte de São João</small>
+                  </div>
+                </div>
+                <p class="card-text texto-cartao">
+                  Na divisa com o litoral norte, abriga o Forte de São Tiago (São João) de 1532 e guarda a memória histórica do alemão Hans Staden.
+                </p>
+                <a class="btn btn-primary botao-cartao" href="bertioga.html">Conhecer Bertioga</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card cartao-cidade">
+              <img class="card-img-top" src="imagens/pci.webp">
+              <div class="card-body corpo-cartao">
+                <div class="cabecalho-cartao">
+                  <img class="bandeira-cidade" src="imagens/Bandeira_Peruíbe.png">
+                  <div>
+                    <h3 class="h5 card-title mb-0">Peruíbe</h3>
+                    <small class="text-secondary">Aldeamento jesuítico</small>
+                  </div>
+                </div>
+                <p class="card-text texto-cartao">
+                  Origens ligadas à missão de São João Batista no século XVI, com rica herança jesuítica e localização estratégica de defesa costeira.
+                </p>
+                <a class="btn btn-primary botao-cartao" href="peruibe.html">Conhecer Peruíbe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-sobre py-5 border-top border-bottom" id="secao-sobre">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold mb-2">Sobre a Região</h2>
+          <p class="text-secondary mx-auto" style="max-width: 650px;">
+            A Região Metropolitana da Baixada Santista está localizada no litoral paulista e reúne nove municípios com rica história e vocação portuária e turística.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="h-100">
+              <h3 class="h5 fw-bold pb-2">Sobre a Região</h3>
+              <p class="text-secondary mb-0">
+                A Região Metropolitana da Baixada Santista está localizada no litoral paulista sendo sede do Porto de Santos, o maior e mais importante complexo portuário da América do Sul, em torno do qual se desenvolveu a economia regional. É a região paulista que possui o menor número de municípios (nove), ocupando apenas 1% do território estadual, e a segunda maior densidade demográfica do Estado.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="h-100">
+              <h3 class="h5 fw-bold pb-2">Importância Econômica</h3>
+              <p class="text-secondary mb-0">
+                Abriga o principal ponto de escoamento da produção brasileira, o Porto de Santos. Está estrategicamente situada a menos de 100 km da capital São Paulo e das indústrias da região do ABC, conciliando atividades industriais, serviços portuários e praias turísticas ao longo do litoral.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="h-100">
+              <h3 class="h5 fw-bold pb-2">Transporte da Região</h3>
+              <p class="text-secondary mb-0">
+                A região possui excelentes conexões de transporte viário através do Sistema Anchieta-Imigrantes, Rodovia Padre Manoel da Nóbrega e a BR-101. Duas linhas ferroviárias atravessam o Estado e desembocam no Porto de Santos, além do VLT ligando pontos centrais da Baixada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fundo-escuro text-secondary rodape-pagina">
+    <div class="container text-center">
+      <a class="btn btn-sm btn-outline-light" href="#">Voltar ao topo</a>
+      <p class="mb-0 small mt-3">
+        Feito por: Enzo, Lucas Soares, Nathan e Rafaela.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
